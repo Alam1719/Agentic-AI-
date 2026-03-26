@@ -1,0 +1,14 @@
+# Environments
+.env
+aaenv/
+__pycache__/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
