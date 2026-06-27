@@ -1,5 +1,6 @@
 from langgraph.graph import StateGraph, START, END
 from state import AgentState
+import pprint
 
 from agents.manager_agent import manager_agent
 from agents.title_agent import title_agent
@@ -62,6 +63,8 @@ if __name__ == "__main__":
         print("TITLE:", final_state.get("title"))
         print("TAGS:", final_state.get("tags"))
         print("TL;DR:", final_state.get("tldr"))
+        print("TAGS:"); pprint.pprint(final_state.get("tags"))
+        print("TL;DR:\n", final_state.get("tldr"))
         print("\nFINAL REVIEW STATUS:", final_state.get("review"))
         
     except Exception as e:
